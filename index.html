@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mathias Cano Vega" />
+    <!-- Web title -->
+    <title>Pokemon Fire Red</title>
+    <!-- Link CSS file -->
+    <link rel="stylesheet" type="text/css" href="css/style03.css" />
+</head>
+<body>  
+  <!-- This input is used to change the theme of the website -->
+  <input class="moon-change" type="checkbox" id="moon-change"/>
+    <!-- Navigation bar -->
+    <header class="header">
+        <!-- Logo -->
+        <a href="#home" class="logo">Fire <span class="highlight">Red</span></a>
+        <!-- Hamburger icon to be mobile responsive -->
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="burger-line" id="burger-style" for="side-menu">☰</label>
+        <!-- Moon icon to change the theme of the website -->
+        <label class="moon" for="moon-change">🌗</label>
+        <!-- Menu -->
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="#home" type="checkbox" >Home</a></li>
+                <li><a href="#char" type="checkbox" >Characters</a> </li>
+                <li><a href="#about" type="checkbox" >About</a></li>
+                <li><a href="#sign" type="checkbox" >Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main Content-The sections -->
+    <main>
+        <!-- First Section with video and title -->
+        <section id="home" class="section-normal">
+            <!-- The fondo class is to style the video so it could fit in the website properly -->
+            <div class="fondo">
+              <video autoplay muted loop>
+                <source src="images/video-final-project.mp4" type="video/mp4">
+              </video>
+          </div>
+          <div class="content">
+            <img class="imagen-title" src="images/pokemon-logo-black-transparent.png" alt="logo">
+          </div>
+          </section>
+
+          <!-- 2 Sections with the Characters informatio -->
+          <section id="char" class="section-char">
+            <h2 class="part-2">Characters: </h2>
+          <div class="container-box">
+            <div class="boxes">
+                <!-- Creating box classes to separate the text and images from each other -->
+              <img  class="img-box" src="images/gif-01.gif" alt="Protagonista" />
+              <h3>Main Characters</h3>
+              <p>
+                They are the main characters of the Pokémon video game adventures.
+                They are the only controllable characters, you can choose if you
+                want to control a male or a female character. Their names are Red
+                for the boy and Leaf for the girl.
+              </p>
+            </div>
+    
+            <div class="boxes">
+              <img class="img-type02-box" src="images/gif-02.gif" alt="Team Rocket" />
+              <h3>Team Rocket</h3>
+              <p>
+                Team Rocket is a fictional criminal gang that operates mostly in the
+                Kanto and Johto regions of the Pokémon video games. They are most
+                commonly dedicated to stealing Pokémon on Giovanni's orders in order
+                to get rare and powerful species or merely to sell them at a high
+                price afterwards. This group are the people that you are going to
+                fight while you are doing collecting the medals
+              </p>
+            </div>
+    
+            <div class="boxes">
+              <img class="img-type03-box" src="images/gif-03.webp" alt="Gym Leaders" />
+              <h3>Gym Leaders</h3>
+              <p>
+                A Gym Leader's main purpose is to put Trainers and their Pokemon to
+                the test to see if they are strong enough and have enough resources
+                to compete in the Pokemon League against the High Command. You will
+                be awarded a medal if you defeat him. There are a total of eight
+                leaders in the game. 
+              </p>
+            </div>
+          </div>   
+          </section>
+
+        <!--3 Sections with the Information part-->
+
+        <section id="about" class="section-about">
+            <h2 class="part-3">About the <span class="highlight">game</span></h2>
+            <div>
+              <p class="text-about">
+                Pokemon Fire Red is a remake, not only was it one but Fire Red came
+                out with another version which is LeafGreen. These two games came
+                out in 2004 and since they are remakes of games that came out before
+                they have the same story to the game they remake. So this game
+                (Pokemon Fire Red) has the same story as Pokemon Red, a boy who has
+                just turned 10 and chooses his first pokemon and starts his
+                adventure. The story focuses on the Protagonist completing the
+                pokedex at the request of Professor Oak and in which on his way he
+                encounters adversities and stoppages in which the protagonist will
+                have to solve in order to complete the game.
+              </p>
+            </div>
+        </section>
+
+        <!--Formulary part-->
+        <section id="sign" class="section-form"> 
+       <div class="formulary" >
+        <video autoplay muted loop class="formulary-vid">
+          <source src="images/video-final-project.mp4" type="video/mp4">
+        </video>
+        <form>
+          <div>
+            <h3>Like Pokemon?</h3>
+            <p>Sign up to join our community</p>
+          </div>
+          <div>
+            <label for="name">Name</label>
+            <input
+              name="name"
+              type="text"
+              class="form"
+              placeholder="Full Name"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input
+              name="email"
+              type="email"
+              class="form"
+              placeholder="Enter Email.."
+              required
+            />
+          </div>
+          <button type="submit" class="boton">Sign Up</button>
+        </form>
+      </div>
+      </section>
+
+      <!--Reference, media used in this website-->
+      <footer>
+        <div>
+            <p>Copyright © Nintedo </p>
+            <p>Copyright © Game FREAK </p>
+            <p>Images were found at internet, you can found it at:</p>
+            <ul class="final">
+                <li><a href="https://wifflegif.com/gifs/333268-transparent-pokemon-gif">Main Characters</a></li>
+                <li><a href="https://aminoapps.com/c/teamrocketworlddomination/page/item/team-rocket-motto/bXKG_DwCnIB2wQWDaEpdx0NoqGX8zzp4wn">Team Rocket</a></li>
+                <li><a href="https://wifflegif.com/tags/232839-gym-leader-gifs">Gym Lyders</a></li>
+            </ul>
+        </div>
+        <p class="copyright_text">© “This is solely for your personal use for research, private study, criticism or review only. 
+          Further reproduction, distribution, transmission, dissemination, or any other use, may be an infringement of copyright if done without securing 
+          the permission of the copyright owner. You may not distribute, e-mail or otherwise communicate these materials to any other person” 
+        </p>
+      </footer> 
+    </main>
+</body>
+</html>
