@@ -1,0 +1,497 @@
+/* The import URL import font styles*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+/* Firtst is made only for phones*/
+/* The root is going to help with the theme change*/
+:root {
+    --white: #f9f9f9;
+    --background-main: #36383F;
+    --gray: #85888C;
+    --sub-op: rgb(218, 96, 96);
+}
+
+
+/* Change Theme set */
+input#moon-change:checked~header {
+    background-color: #1A1A1D;
+    transition: 0.2s;
+}
+
+input#moon-change:checked~header nav {
+    background-color: #1A1A1D;
+    transition: 0.2s;
+}
+
+input#moon-change:checked~main .section-char {
+    background-color: #1A1A1D;
+}
+
+input#moon-change:checked~main .section-about {
+    background-image: url(theme-change-img.png);
+}
+
+input#moon-change:checked~main footer {
+    background-color: #1A1A1D;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white);
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header , with a Z-index of 10000 to put it in front of everything*/
+.header {
+    background-color: var(--background-main);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+/* Logo */
+.logo {
+    display: inline-block;
+    color: var(--white);
+    font-size: 60px;
+    margin-left: 10px;
+}
+
+.nav {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: var(--background-main);
+    overflow: hidden;
+    width: 100%;
+}
+
+.header label {
+    font-size: 35px;
+}
+
+.menu a {
+    display: block;
+    padding: 30px;
+    color: var(--white);
+}
+
+.options-menu {
+    text-align: right;
+}
+
+
+.menu a:hover {
+    color: rgb(218, 96, 96);
+}
+
+.nav {
+    max-height: 0;
+    transition: 50% .5s ease-out;
+}
+
+
+/* Style burger */
+
+.burger-line {
+    margin-top: 1.5rem;
+    height: 2px;
+    position: absolute;
+    width: 100vh;
+    margin-left: 19.5%;
+    color: #f9f9f9;
+}
+
+#burger-style {
+    width: 45px;
+}
+
+/* Disapear the burger icon*/
+.side-menu {
+    display: none;
+}
+
+/* Style moon*/
+.moon {
+    margin-left: 0.5rem;
+    font-size: 8px;
+}
+
+
+/* Toggle menu icon */
+.side-menu:checked~nav {
+    max-height: 50%;
+    transition: 0.5s;
+}
+
+
+
+.section-normal {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 25px;
+    color: #EAEAEB;
+}
+
+.section-char {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 25px;
+    background-color: var(--background-main);
+    color: #EAEAEB;
+    z-index: 1;
+}
+
+.fondo {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Z-index to put the video behind everything */
+.fondo video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 95%;
+    pointer-events: none;
+    margin-top: 4.5rem;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content h1 {
+    position: relative;
+    margin: 10rem;
+    padding: 0;
+    font-size: 8vw;
+    color: #262626;
+    font-style: italic;
+    text-transform: uppercase;
+
+}
+
+.imagen-title {
+    margin-top: 11rem;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    z-index: 85;
+}
+
+.part-2 {
+    margin: 10vh 7vh;
+    font-size: 46px;
+    text-align: left;
+    color: var(--subtittle);
+}
+
+.container-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: justify;
+    width: 100%;
+    margin-top: -8rem;
+}
+
+.img-box {
+    width: 100%;
+    height: 45%;
+    align-items: center;
+}
+
+.img-type02-box {
+    width: 60%;
+    height: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-type03-box {
+    width: 110%;
+    height: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-char h2 {
+    color: rgb(218, 96, 96);
+}
+
+h3 {
+    color: rgb(218, 96, 96);
+    text-align: center;
+}
+
+.boxes {
+
+    padding: -5px;
+    text-align: justify;
+    margin: 6rem;
+}
+
+.section-about {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 65px;
+    background: #262626;
+    background-image: url(picture-about.png);
+    color: #EAEAEB;
+    padding-bottom: 65px;
+    z-index: 2;
+}
+
+.highlight {
+    color: rgb(218, 96, 96);
+}
+
+.part-3 {
+    text-align: center;
+    padding: 0%;
+    margin-top: 10vh;
+    font-size: 86px;
+}
+
+.text-about {
+    text-align: justify;
+    width: 75%;
+    justify-content: center;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 5rem;
+    font-size: 22px;
+}
+
+form {
+    display: block;
+    margin: 4vh;
+    z-index: 4;
+}
+
+.section-form {
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    padding-top: 25px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+
+.formulary {
+    position: relative;
+    border: 5px solid var(--main-fondo-color);
+    border-radius: 5px;
+    width: 45vh;
+    height: 50vh;
+}
+
+
+
+footer {
+    width: 100%;
+    background-color: #262626;
+    align-self: center;
+    text-align: center;
+    z-index: 1;
+}
+
+.formulary form {
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.formulary-vid {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: blur(2.5px);
+    border-radius: 25px;
+
+}
+
+.formulary form input {
+    display: flexbox;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.boton {
+    display: flexbox;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.formulary form input:hover {
+    border-color: red;
+}
+
+.formulary p {
+    color: var(--sub-op);
+    font-weight: bold;
+}
+
+.formulary form label {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+.formulary form input {
+    font-weight: 400;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--gray);
+    align-self: center;
+    text-align: center;
+    z-index: 1;
+    background-color: var(--background-main);
+}
+
+
+
+footer p {
+    text-align: center;
+    align-items: center;
+    color: white;
+    padding: 1rem;
+}
+
+.copyright_text {
+    font-size: 12px;
+    padding-bottom: 4rem;
+}
+
+
+li {
+    display: grid;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+}
+
+.final {
+    padding-bottom: 5rem;
+}
+
+.final a {
+    color: rgb(218, 96, 96);
+}
+
+/* Responsiveness for Desktop */
+@media (min-width: 1000px) {
+    .nav {
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+    }
+
+    .menu li {
+        float: left;
+    }
+
+    .menu a:hover {
+        background-color: transparent;
+        color: rgb(218, 96, 96);
+
+    }
+
+    .burger-line {
+        display: none;
+    }
+
+
+    .imagen-title {
+        margin-top: -3rem;
+    }
+
+    /* Make the text appear as a row */
+    .container-box {
+        flex-direction: row;
+    }
+
+    footer p {
+        font-size: 20px;
+    }
+
+    footer ul {
+        font-size: 18px;
+    }
+
+    .copyright_text {
+        font-size: 17px;
+    }
+
+}
+
+/* Responsiveness for Tablets */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+
+    .menu a {
+        font-size: 26px;
+    }
+
+    .burger-line {
+        margin-left: 28rem;
+    }
+
+    form {
+        font-size: 20px;
+    }
+}
